@@ -32,3 +32,7 @@
   background-image: url(../img/gowron.jpg);
   background-size: 200px 200px;
 }
+
+#results {
+  display: none;
+}
