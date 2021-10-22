@@ -1,21 +1,12 @@
-/*
-  To get today's date:
+function withHonor(lang, date, why, sweetroll) {
   let fullDate = new Date();
-
   let today = fullDate.getFullYear()+'-'+(fullDate.getMonth()+1)+'-'+fullDate.getDate();
 
-  if they select today's date, this = true
-  today === $("#surv-date").val();
-
-  check why today is their favourite date = true (regardless of casing)
-  $("#surv-why").val().toUpperCase === 'IT IS A GOOD DAY TO DIE!'
-
-  if they checked the combat option = true
-  $("input:radio[name=action]:checked").val() === 'combat'
-*/
-
-function withHonor(lang, date, why, sweetroll) {
-  return false;
+  if (lang===69 && date===today && why==='IT IS A GOOD DAY TO DIE!' && sweetroll==='combat') {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 $(document).ready(function() {
@@ -24,11 +15,12 @@ $(document).ready(function() {
     
     const favLang = parseInt($("#surv-lang").val());
     const favDate = $("#surv-date").val();
-    const whyDate = $("#surv-why").val();
+    const whyDate = $("#surv-why").val().toUpperCase();
     const sweetroll = $("input:radio[name=action]:checked").val();
     const colour = $("#surv-colour").val();
 
     $("#results").show();
+    $("body").removeClass();
 
     if (withHonor(favLang, favDate, whyDate, sweetroll)) {
       $("#results-language").text('KLINGON!');
