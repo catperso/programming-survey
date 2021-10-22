@@ -40,3 +40,12 @@
 #surv-card {
   padding: 15px;
 }
+
+#results-p {
+  text-align: center;
+  margin: 5px;
+}
+
+.card-img-top {
+  display: none;
+}
