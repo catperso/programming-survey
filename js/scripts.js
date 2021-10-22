@@ -23,6 +23,7 @@ $(document).ready(function() {
     $("body").removeClass();
     $(".card-img-top").hide();
     $(".results-info").hide();
+    $(".btn").css("color", colour);
 
     if (withHonor(favLang, favDate, whyDate, sweetroll)) {
       $("#results-language").text('KLINGONESE!');
