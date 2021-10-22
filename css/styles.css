@@ -53,3 +53,7 @@
 .results-info {
   display: none;
 }
+
+.results-info h3 {
+  text-align: center;
+}

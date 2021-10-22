@@ -31,35 +31,35 @@ $(document).ready(function() {
       $("#gowron-logo").show();
     } else if (favLang === 1) {
       $("#results-language").text('Ruby!');
-      $("#results-info").text("Ruby is an object-oriented scripting language. First released in 1995, it steadily grew in popularity until mass acceptance in 2006. A large amount of its popularity comes from Ruby on Rails, a framework for building modern web applications. Some of its identifying ");
+      $("#ruby-info").show();
       $("#ruby-logo").show();
     } else if (favLang === 2) {
       $("#results-language").text('C#!');
-      $("#results-info").text('c# lorem ipsum');
+      $("#csharp-info").show();
       $("#csharp-logo").show();
     } else if (favLang === 3) {
       $("#results-language").text('JavaScript!');
-      $("#results-info").text('javascript lorem ipsum');
+      $("#javascript-info").show();
       $("#javascript-logo").show();
     } else if (favLang === 4) {
       $("#results-language").text('Go!');
-      $("#results-info").text('go lorem ipsum');
+      $("#go-info").show();
       $("#go-logo").show();
     } else if (favLang === 5) {
       $("#results-language").text('Python!');
-      $("#results-info").text('python lorem ipsum');
+      $("#python-info").show();
       $("#python-logo").show();
     } else if (favLang === 6) {
       $("#results-language").text('Rust!');
-      $("#results-info").text('rust lorem ipsum');
+      $("#rust-info").show();
       $("#rust-logo").show();
     } else if (favLang === 7) {
       $("#results-language").text('Swift!');
-      $("#results-info").text('swift lorem ipsum');
+      $("#swift-info").show();
       $("#swift-logo").show();
     } else {
       $("#results-language").text('JavaScript!');
-      $("#results-info").text('javascript lorem ipsum');
+      $("#javascript-info").show();
       $("#javascript-logo").show();
     }
   });
