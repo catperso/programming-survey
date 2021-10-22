@@ -19,11 +19,10 @@ $(document).ready(function() {
     const sweetroll = $("input:radio[name=action]:checked").val();
     const colour = $("#surv-colour").val();
 
-    $("#results").show();
+    $("#results").hide();
     $("body").removeClass();
     $(".card-img-top").hide();
     $(".results-info").hide();
-    $(".jumbotron").css("background-color", colour);
 
     if (withHonor(favLang, favDate, whyDate, sweetroll)) {
       $("#results-language").text('KLINGONESE!');
@@ -63,5 +62,7 @@ $(document).ready(function() {
       $("#javascript-info").show();
       $("#javascript-logo").show();
     }
+
+    $("#results").slideDown();
   });
 });
